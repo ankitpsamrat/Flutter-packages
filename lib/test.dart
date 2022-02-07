@@ -2,12 +2,12 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: "hello",
-    home: HomePage(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     title: "hello",
+//     home: HomePage(),
+//   ));
+// }
 
 class HomePage extends StatelessWidget {
   @override

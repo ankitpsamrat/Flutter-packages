@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: "hello",
-    home: HomePage(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     title: "hello",
+//     home: HomePage1(),
+//   ));
+// }
 
-class HomePage extends StatelessWidget {
+class HomePage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

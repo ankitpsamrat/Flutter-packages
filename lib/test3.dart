@@ -2,15 +2,15 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: "hello",
-    home: HomePage(),
-    theme: ThemeData(primarySwatch: Colors.purple),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     title: "hello",
+//     home: HomePage(),
+//     theme: ThemeData(primarySwatch: Colors.purple),
+//   ));
+// }
 
-class HomePage extends StatelessWidget {
+class HomePage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
