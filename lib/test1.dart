@@ -2,10 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(profile());
-// }
-
 class profile extends StatelessWidget {
   const profile({Key? key}) : super(key: key);
 
@@ -16,30 +12,51 @@ class profile extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.lightGreen,
         body: Container(
-          child: Column(children: [
-            CircleAvatar(
-              radius: 100,
-              backgroundImage: AssetImage('images/mypic.png'),
-            ),
-            Text(
-              "Ankit Pratap Samrat",
-              style: TextStyle(
+          padding: EdgeInsets.only(
+            top: 25,
+          ),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 100,
+                backgroundImage: AssetImage(
+                  'assets/images/mypic.png',
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 15,
+                ),
+              ),
+              Text(
+                "Ankit Pratap Samrat",
+                style: TextStyle(
                   fontFamily: 'Pacifico',
-                  fontSize: 40,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
-            ),
-            Text(
-              "Flutter Developer",
-              style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 35,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  letterSpacing: 2.0),
-            ),
-            Card(
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 10,
+                ),
+              ),
+              Text(
+                "Flutter Developer",
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1,
+                ),
+              ),
+              Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                margin: EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 25,
+                ),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
@@ -48,31 +65,37 @@ class profile extends StatelessWidget {
                   title: Text(
                     "+91 7523878181",
                     style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.lightBlueAccent,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1),
-                  ),
-                )),
-            Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: ListTile(
-                leading: Icon(
-                  Icons.email,
-                  color: Colors.lightBlueAccent,
-                ),
-                title: Text(
-                  "ankit.p.samrat@gmail.com",
-                  style: TextStyle(
                       fontSize: 20,
-                      color: Colors.blueGrey,
+                      color: Colors.lightBlueAccent,
                       fontWeight: FontWeight.bold,
-                      letterSpacing: 1),
+                      letterSpacing: 1,
+                    ),
+                  ),
                 ),
               ),
-            )
-          ]),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.lightBlueAccent,
+                  ),
+                  title: Text(
+                    "ankit.p.samrat@gmail.com",
+                    style: TextStyle(
+                      fontSize: 17,
+                      color: Colors.blueGrey,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
