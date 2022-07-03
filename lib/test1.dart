@@ -1,9 +1,7 @@
-// ignore_for_file: use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types
-
 import 'package:flutter/material.dart';
 
-class profile extends StatelessWidget {
-  const profile({Key? key}) : super(key: key);
+class Profile extends StatelessWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +10,11 @@ class profile extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.lightGreen,
         body: Container(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             top: 25,
           ),
           child: Column(
-            children: [
+            children: const [
               CircleAvatar(
                 radius: 100,
                 backgroundImage: AssetImage(

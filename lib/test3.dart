@@ -1,22 +1,14 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(MaterialApp(
-//     title: "hello",
-//     home: HomePage(),
-//     theme: ThemeData(primarySwatch: Colors.purple),
-//   ));
-// }
-
 class HomePage2 extends StatelessWidget {
+  const HomePage2({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: Text("Hello App"),
+        title: const Text("Hello App"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -25,21 +17,24 @@ class HomePage2 extends StatelessWidget {
             child: Column(
               children: [
                 Image.asset(
-                  "images/bg.jfif",
+                  'assets/images/mypic.png',
                   fit: BoxFit.cover,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   "Change me",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(16),
+                const Padding(
+                  padding: EdgeInsets.all(16),
                   child: TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
@@ -47,7 +42,7 @@ class HomePage2 extends StatelessWidget {
                       labelText: "Name",
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -58,23 +53,23 @@ class HomePage2 extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text("Ankit Pratap Samrat"),
-              accountEmail: Text("ankit.p.samrat@gmail.com"),
+              accountName: const Text("Ankit Pratap Samrat"),
+              accountEmail: const Text("ankit.p.samrat@gmail.com"),
               currentAccountPicture: Image.asset('images/mypic.png'),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.person),
               title: Text("ABOUT"),
               subtitle: Text("User"),
               trailing: Icon(Icons.edit),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.email),
               title: Text("ankit.p.samrat@gmail.com"),
               // subtitle: Text("User"),
               trailing: Icon(Icons.send),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.phone),
               title: Text("+91 7523878181"),
               // subtitle: Text("User"),
@@ -87,7 +82,7 @@ class HomePage2 extends StatelessWidget {
       // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat, // button location set
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.edit),
+        child: const Icon(Icons.edit),
         // child: Icon(Icons.refresh), // refresh icon set krne ke liye
         // mini: true, // botton ko chota rakhane ke liye
       ),
