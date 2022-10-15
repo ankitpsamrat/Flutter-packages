@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/screens/share_preference_method.dart';
-// import 'package:test/about.dart';
-// import 'package:test/test.dart';
-// import 'package:test/test1.dart';
-// import 'package:test/test2.dart';
-// import 'package:test/test3.dart';
+import 'package:test/packageTest/provider/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +18,9 @@ class MyApp extends StatelessWidget {
       // home: HomePage2(),
       // home: About(),
       // home: TopSkills(),
-      home: SharePreference(),
+      // home: SharePreference(),
+      // home: HttpPackage(),
+      home: ProviderHome(),
     );
   }
 }

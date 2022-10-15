@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/utils/utils.dart';
+import 'package:test/codeTest/common/utils/responsive.dart';
 
 class SkillCard extends StatelessWidget {
   const SkillCard({
