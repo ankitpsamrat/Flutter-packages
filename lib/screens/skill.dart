@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:test/utils.dart';
+import 'package:test/utils/utils.dart';
 
 class SkillCard extends StatelessWidget {
-  final String url;
   const SkillCard({
     Key? key,
     required this.url,
   }) : super(key: key);
 
+  final String url;
+  
   @override
   Widget build(BuildContext context) {
     return Padding(

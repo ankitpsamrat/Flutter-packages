@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test/screens/share_preference_method.dart';
 // import 'package:test/about.dart';
-import 'package:test/skill.dart';
 // import 'package:test/test.dart';
 // import 'package:test/test1.dart';
 // import 'package:test/test2.dart';
@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
       // home: HomePage1(),
       // home: HomePage2(),
       // home: About(),
-      home: TopSkills(),
+      // home: TopSkills(),
+      home: SharePreference(),
     );
   }
 }
