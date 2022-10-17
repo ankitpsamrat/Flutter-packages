@@ -1,28 +1,27 @@
+// ignore_for_file: constant_identifier_names
+
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test/packageTest/bloc/blocs/internet_event.dart';
-import 'package:test/packageTest/bloc/blocs/internet_state.dart';
 
-class InternetBloc extends Bloc<InternetEvent, InternetState> {
+enum InternetState { Initial, Lost, Gained }
+
+class InternetCubit extends Cubit<InternetState> {
   //  created variable
 
   final _connectivity = Connectivity();
   StreamSubscription? connectivitySubscription;
 
-  //  bloc method
+  //  cubit method
 
-  InternetBloc() : super(InternetInitialState()) {
-    on<InternetLostEvent>((event, emit) => emit(InternetLostState()));
-    on<InternetGainedEvent>((event, emit) => emit(InternetGainedState()));
-
+  InternetCubit() : super(InternetState.Initial) {
     connectivitySubscription =
         _connectivity.onConnectivityChanged.listen((result) {
       if (result == ConnectivityResult.mobile ||
           result == ConnectivityResult.wifi) {
-        add(InternetGainedEvent());
+        emit(InternetState.Gained);
       } else {
-        add(InternetLostEvent());
+        emit(InternetState.Lost);
       }
     });
   }

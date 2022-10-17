@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test/packageTest/bloc/blocs/internet_bloc.dart';
 import 'package:test/packageTest/bloc/screens/home_screen.dart';
+import 'package:test/packageTest/cubit/cubits/internet_cubit.dart';
+import 'package:test/packageTest/cubit/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,11 +32,21 @@ class MyApp extends StatelessWidget {
 
     //  for bloc screen
 
+    // return BlocProvider(
+    //   create: (context) => InternetBloc(),
+    //   child: MaterialApp(
+    //     debugShowCheckedModeBanner: false,
+    //     home: BlocHome(),
+    //   ),
+    // );
+
+    //  for cubit screen
+
     return BlocProvider(
-      create: (context) => InternetBloc(),
+      create: (context) => InternetCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: BlocHome(),
+        home: CubitHome(),
       ),
     );
   }
