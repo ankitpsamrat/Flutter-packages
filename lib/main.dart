@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test/packageTest/bloc/blocs/internet_bloc.dart';
-import 'package:test/packageTest/bloc/screens/home_screen.dart';
-import 'package:test/packageTest/cubit/cubits/internet_cubit.dart';
-import 'package:test/packageTest/cubit/screens/home_screen.dart';
+import 'package:test/widgetTest/bottom_sheet.dart';
+import 'package:test/widgetTest/reorderable_list_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,19 +13,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //  for all screen
 
-    // return  MaterialApp(
-    //   debugShowCheckedModeBanner: false,
-    //   // home: HomePage(),
-    //   // home: profile(),
-    //   // home: HomePage1(),
-    //   // home: HomePage2(),
-    //   // home: About(),
-    //   // home: TopSkills(),
-    //   // home: SharedPreference(),
-    //   // home: HttpPackage(),
-    //   // home: ProviderHome(),
-    //   home: BlocHome(),
-    // );
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      // home: HomePage(),
+      // home: profile(),
+      // home: HomePage1(),
+      // home: HomePage2(),
+      // home: About(),
+      // home: TopSkills(),
+      // home: SharedPreference(),
+      // home: HttpPackage(),
+      // home: ProviderHome(),
+      // home: BannerWidget(),
+      // home: BottomSheetWidget(),
+      home: ReorderableListViewWidget(),
+    );
 
     //  for bloc screen
 
@@ -42,12 +41,12 @@ class MyApp extends StatelessWidget {
 
     //  for cubit screen
 
-    return BlocProvider(
-      create: (context) => InternetCubit(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: CubitHome(),
-      ),
-    );
+    // return BlocProvider(
+    //   create: (context) => InternetCubit(),
+    //   child: MaterialApp(
+    //     debugShowCheckedModeBanner: false,
+    //     home: CubitHome(),
+    //   ),
+    // );
   }
 }
