@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/widgetTest/bottom_sheet.dart';
-import 'package:test/widgetTest/reorderable_list_view.dart';
+import 'package:test/widgetTest/date_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +25,13 @@ class MyApp extends StatelessWidget {
       // home: ProviderHome(),
       // home: BannerWidget(),
       // home: BottomSheetWidget(),
-      home: ReorderableListViewWidget(),
+      // home: ReorderableListViewWidget(),
+      // home: CheckBoxWidget(),
+      // home: ContextMenuWidget(),
+      // home: TableWidget(),
+      // home: AlertDialogWidget(),
+      // home: CardWidget(),
+      home: DatePickerWidget(),
     );
 
     //  for bloc screen
