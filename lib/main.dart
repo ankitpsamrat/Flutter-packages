@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/widgetTest/date_picker.dart';
+import 'package:test/widgetTest/date_range_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +31,9 @@ class MyApp extends StatelessWidget {
       // home: TableWidget(),
       // home: AlertDialogWidget(),
       // home: CardWidget(),
-      home: DatePickerWidget(),
+      // home: DatePickerWidget(),
+      // home: TimePickerWidget(),
+      home: DateRangePickerWidget(),
     );
 
     //  for bloc screen

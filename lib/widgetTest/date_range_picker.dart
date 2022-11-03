@@ -1,43 +1,43 @@
 import 'package:flutter/material.dart';
 
-class DatePickerWidget extends StatefulWidget {
-  const DatePickerWidget({super.key});
+class DateRangePickerWidget extends StatefulWidget {
+  const DateRangePickerWidget({super.key});
 
   @override
-  State<DatePickerWidget> createState() => _DatePickerWidgetState();
+  State<DateRangePickerWidget> createState() => _DateRangePickerWidgetState();
 }
 
-class _DatePickerWidgetState extends State<DatePickerWidget> {
+class _DateRangePickerWidgetState extends State<DateRangePickerWidget> {
   //
 
-  DateTime selectedDate = DateTime.now();
+  DateTimeRange selectedDates = DateTimeRange(
+    start: DateTime.now(),
+    end: DateTime.now(),
+  );
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Date Picker Widget'),
+        title: Text('Date Range Picker Widget'),
         elevation: 0,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '${selectedDate.day} - ${selectedDate.month} - ${selectedDate.year}',
-            ),
+            Text('${selectedDates.duration.inDays}'),
             SizedBox(height: 10),
             ElevatedButton(
               onPressed: () async {
-                final DateTime? dateTime = await showDatePicker(
+                final DateTimeRange? dateTimeRange = await showDateRangePicker(
                   context: context,
-                  initialDate: selectedDate,
                   firstDate: DateTime(2000),
                   lastDate: DateTime(3000),
                 );
-                if (dateTime != null) {
+                if (dateTimeRange != null) {
                   setState(() {
-                    selectedDate = dateTime;
+                    selectedDates = dateTimeRange;
                   });
                 }
               },
