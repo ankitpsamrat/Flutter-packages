@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/widgetTest/tab_bar.dart';
+import 'package:test/packageTest/quickalert/quickalert.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       // home: SharedPreference(),
       // home: HttpPackage(),
       // home: ProviderHome(),
+      home: QuickAlertPackage(),
       // home: BannerWidget(),
       // home: BottomSheetWidget(),
       // home: ReorderableListViewWidget(),
@@ -47,7 +48,13 @@ class MyApp extends StatelessWidget {
       // home: ListTileWidget(),
       // home: NavigationBarWidget(),
       // home: SwitchWidget(),
-      home: TabBarWidget(),
+      // home: TabBarWidget(),
+      // home: RadioListTileWidget(),
+      // home: RefreshIndicatorWidget(),
+      // home: SelectableWidget(),
+      // home: SnackbarWidget(),
+      // home: LayoutBuilderWidget(),
+      // home: FittedBoxWidget(),
     );
 
     //  for bloc screen
