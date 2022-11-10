@@ -18,7 +18,7 @@ class GridViewWidget extends StatelessWidget {
             mainAxisSpacing: 5,
             crossAxisSpacing: 5,
           ),
-          itemCount: 10,
+          itemCount: 14,
           itemBuilder: (context, index) => GridTile(
             child: Image.network(
               'https://cdn.pixabay.com/photo/2016/03/08/20/03/flag-1244649_960_720.jpg',

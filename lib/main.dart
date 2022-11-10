@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/widgetTest/grid_view.dart';
+import 'package:test/widgetTest/tab_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +41,13 @@ class MyApp extends StatelessWidget {
       // home: ChoiceChipWidget(),
       // home: FadeInImageWidget(),
       // home: FutureBuilderWidget(),
-      home: GridViewWidget(),
+      // home: GridViewWidget(),
+      // home: GridTileWidget(),
+      // home: ListViewWidget(),
+      // home: ListTileWidget(),
+      // home: NavigationBarWidget(),
+      // home: SwitchWidget(),
+      home: TabBarWidget(),
     );
 
     //  for bloc screen
