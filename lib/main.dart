@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/packageTest/quickalert/quickalert.dart';
+import 'package:test/quickalert/quickalert.dart';
 
 void main() {
   runApp(const MyApp());
