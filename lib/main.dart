@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/carouselSlider/home_page.dart';
+import 'imagePicker/image_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       // home: HttpPackage(),
       // home: ProviderHome(),
       // home: QuickAlertPackage(),
-      home: MySlider(),
+      home: PickImgFromGallery(),
     );
 
     //  for bloc screen
