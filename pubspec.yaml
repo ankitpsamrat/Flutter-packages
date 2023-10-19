@@ -38,6 +38,7 @@ dependencies:
   provider: ^6.0.4
   quickalert: ^1.0.0
   shared_preferences: ^2.0.15
+  sliding_up_panel: ^2.0.0+1
 
 dev_dependencies:
   flutter_lints: ^1.0.0
