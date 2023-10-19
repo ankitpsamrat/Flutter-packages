@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'imagePicker/image_picker.dart';
+import 'package:test/slidingUpPanel/sliding_up_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       // home: HttpPackage(),
       // home: ProviderHome(),
       // home: QuickAlertPackage(),
-      home: PickImgFromGallery(),
+      // home: PickImgFromGallery(),
+      home: SlidingUpScreen(),
     );
 
     //  for bloc screen
