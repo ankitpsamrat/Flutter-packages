@@ -20,8 +20,7 @@ class MyApp extends StatelessWidget {
       home: SlidingUpScreen(),
     );
 
-    //  for bloc screen
-
+    //  for bloc method
     // return BlocProvider(
     //   create: (context) => InternetBloc(),
     //   child: MaterialApp(
@@ -30,14 +29,19 @@ class MyApp extends StatelessWidget {
     //   ),
     // );
 
-    //  for cubit screen
-
+    //  for cubit mehtod
     // return BlocProvider(
     //   create: (context) => InternetCubit(),
     //   child: MaterialApp(
     //     debugShowCheckedModeBanner: false,
     //     home: CubitHome(),
     //   ),
+    // );
+
+    //  for go router method
+    // return MaterialApp.router(
+    //   debugShowCheckedModeBanner: false,
+    //   routerConfig: RouterService.router,
     // );
   }
 }
