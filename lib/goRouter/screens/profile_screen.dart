@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../services/router_service.dart';
+
 class ProfileScreen extends StatelessWidget {
   final String name;
 
@@ -20,7 +22,10 @@ class ProfileScreen extends StatelessWidget {
             //  GoRouter.of(context).go('/');
 
             //  It is also written like this.
-            context.go('/');
+            // context.go('/');
+
+            //  this method used for named router
+            context.goNamed(RouterService.dashboard);
           },
           child: Text('Dashboard'),
         ),

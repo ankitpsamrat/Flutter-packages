@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../services/router_service.dart';
+
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
 
@@ -21,8 +23,15 @@ class DashboardScreen extends StatelessWidget {
             //  context.go('/profile');
 
             //  passing parameter to the router
+            // String name = 'Ankit';
+            // context.go('/profile/$name');
+
+            //  this method used for named router
             String name = 'Ankit';
-            context.go('/profile/$name');
+            context.goNamed(
+              RouterService.profile,
+              pathParameters: {'name': name},
+            );
           },
           child: Text('Profile'),
         ),
