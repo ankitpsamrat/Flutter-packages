@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test/provider/providers/provider.dart';
+import 'package:flutter_packages/provider/providers/provider.dart';
 
 class ProviderHome extends StatefulWidget {
   const ProviderHome({super.key});

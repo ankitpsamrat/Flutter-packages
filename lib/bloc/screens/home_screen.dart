@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test/bloc/blocs/internet_bloc.dart';
-import 'package:test/bloc/blocs/internet_state.dart';
+import 'package:flutter_packages/bloc/blocs/internet_bloc.dart';
+import 'package:flutter_packages/bloc/blocs/internet_state.dart';
 
 class BlocHome extends StatelessWidget {
   const BlocHome({super.key});

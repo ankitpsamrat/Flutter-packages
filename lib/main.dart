@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/slidingUpPanel/sliding_up_screen.dart';
+import 'package:flutter_packages/slidingUpPanel/sliding_up_screen.dart';
 
 void main() {
   runApp(const MyApp());

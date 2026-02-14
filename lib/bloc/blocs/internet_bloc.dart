@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test/bloc/blocs/internet_event.dart';
-import 'package:test/bloc/blocs/internet_state.dart';
+import 'package:flutter_packages/bloc/blocs/internet_event.dart';
+import 'package:flutter_packages/bloc/blocs/internet_state.dart';
 
 class InternetBloc extends Bloc<InternetEvent, InternetState> {
   //  created variable

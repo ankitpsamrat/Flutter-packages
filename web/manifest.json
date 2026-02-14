@@ -1,6 +1,6 @@
 {
-    "name": "test",
-    "short_name": "test",
+    "name": "flutter_packages",
+    "short_name": "flutter_packages",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
