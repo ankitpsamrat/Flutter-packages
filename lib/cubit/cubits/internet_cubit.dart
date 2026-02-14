@@ -1,10 +1,8 @@
-// ignore_for_file: constant_identifier_names
-
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-enum InternetState { Initial, Lost, Gained }
+enum InternetState { initial, lost, gained }
 
 class InternetCubit extends Cubit<InternetState> {
   //  created variable
@@ -14,14 +12,15 @@ class InternetCubit extends Cubit<InternetState> {
 
   //  cubit method
 
-  InternetCubit() : super(InternetState.Initial) {
-    connectivitySubscription =
-        _connectivity.onConnectivityChanged.listen((result) {
-      if (result == ConnectivityResult.mobile ||
-          result == ConnectivityResult.wifi) {
-        emit(InternetState.Gained);
+  InternetCubit() : super(InternetState.initial) {
+    connectivitySubscription = _connectivity.onConnectivityChanged.listen((
+      result,
+    ) {
+      if (result.contains(ConnectivityResult.mobile) ||
+          result.contains(ConnectivityResult.wifi)) {
+        emit(InternetState.gained);
       } else {
-        emit(InternetState.Lost);
+        emit(InternetState.lost);
       }
     });
   }

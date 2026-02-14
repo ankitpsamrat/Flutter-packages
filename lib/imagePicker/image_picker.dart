@@ -15,8 +15,9 @@ class _PickImgFromGalleryState extends State<PickImgFromGallery> {
 
   Future pickImgFromGallery() async {
     try {
-      final pickedImage =
-          await ImagePicker().pickImage(source: ImageSource.gallery);
+      final pickedImage = await ImagePicker().pickImage(
+        source: ImageSource.gallery,
+      );
 
       if (pickedImage == null) return;
       final imagePath = File(pickedImage.path);
@@ -32,10 +33,7 @@ class _PickImgFromGalleryState extends State<PickImgFromGallery> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        title: Text('Image picker funcitionality'),
-      ),
+      appBar: AppBar(elevation: 0, title: Text('Image picker funcitionality')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

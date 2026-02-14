@@ -8,21 +8,18 @@ class CubitHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Cubit method implimentation'),
-        elevation: 0,
-      ),
+      appBar: AppBar(title: Text('Cubit method implimentation'), elevation: 0),
       body: Center(
         child: BlocConsumer<InternetCubit, InternetState>(
           listener: (context, state) {
-            if (state == InternetState.Gained) {
+            if (state == InternetState.gained) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Internet connected !'),
                   backgroundColor: Colors.green,
                 ),
               );
-            } else if (state == InternetState.Lost) {
+            } else if (state == InternetState.lost) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Internet connected !'),
@@ -32,9 +29,9 @@ class CubitHome extends StatelessWidget {
             }
           },
           builder: (context, state) {
-            if (state == InternetState.Gained) {
+            if (state == InternetState.gained) {
               return Text('Connected !');
-            } else if (state == InternetState.Lost) {
+            } else if (state == InternetState.lost) {
               return Text('Not connected !');
             }
             return Text('Loading...');

@@ -9,10 +9,7 @@ class BlocHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Bloc package implimentation'),
-        elevation: 0,
-      ),
+      appBar: AppBar(title: Text('Bloc package implimentation'), elevation: 0),
       body: Center(
         child: BlocConsumer<InternetBloc, InternetState>(
           listener: (context, state) {

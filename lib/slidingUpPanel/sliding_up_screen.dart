@@ -19,22 +19,28 @@ class SlidingUpScreen extends StatelessWidget {
           children: const [
             SizedBox(height: 30),
             Text(
-                'How can I create a page that slides from the bottom of the screen and when it passes a certain threshold automatically fills the screen? Something like this:'),
+              'How can I create a page that slides from the bottom of the screen and when it passes a certain threshold automatically fills the screen? Something like this:',
+            ),
             SizedBox(height: 30),
             Text(
-                'The above demo video shows how to create a beautiful onboarding screen in a flutter. It shows how onboarding will work using the intro_slider package in your flutter applications. It shows beautiful three designs that slide as we click on Next. It will be shown on your device.'),
+              'The above demo video shows how to create a beautiful onboarding screen in a flutter. It shows how onboarding will work using the intro_slider package in your flutter applications. It shows beautiful three designs that slide as we click on Next. It will be shown on your device.',
+            ),
             SizedBox(height: 30),
             Text(
-                'How can I create a page that slides from the bottom of the screen and when it passes a certain threshold automatically fills the screen? Something like this:'),
+              'How can I create a page that slides from the bottom of the screen and when it passes a certain threshold automatically fills the screen? Something like this:',
+            ),
             SizedBox(height: 30),
             Text(
-                'The above demo video shows how to create a beautiful onboarding screen in a flutter. It shows how onboarding will work using the intro_slider package in your flutter applications. It shows beautiful three designs that slide as we click on Next. It will be shown on your device.'),
+              'The above demo video shows how to create a beautiful onboarding screen in a flutter. It shows how onboarding will work using the intro_slider package in your flutter applications. It shows beautiful three designs that slide as we click on Next. It will be shown on your device.',
+            ),
             SizedBox(height: 30),
             Text(
-                'How can I create a page that slides from the bottom of the screen and when it passes a certain threshold automatically fills the screen? Something like this:'),
+              'How can I create a page that slides from the bottom of the screen and when it passes a certain threshold automatically fills the screen? Something like this:',
+            ),
             SizedBox(height: 30),
             Text(
-                'The above demo video shows how to create a beautiful onboarding screen in a flutter. It shows how onboarding will work using the intro_slider package in your flutter applications. It shows beautiful three designs that slide as we click on Next. It will be shown on your device.')
+              'The above demo video shows how to create a beautiful onboarding screen in a flutter. It shows how onboarding will work using the intro_slider package in your flutter applications. It shows beautiful three designs that slide as we click on Next. It will be shown on your device.',
+            ),
           ],
         ),
       ),

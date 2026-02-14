@@ -8,10 +8,7 @@ class QuickAlertPackage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Quick Alert Package'),
-        elevation: 0,
-      ),
+      appBar: AppBar(title: Text('Quick Alert Package'), elevation: 0),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

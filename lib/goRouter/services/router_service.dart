@@ -34,9 +34,8 @@ class RouterService {
       GoRoute(
         name: profile, //  its called named route
         path: "/profile/:name",
-        builder: (context, state) => ProfileScreen(
-          name: state.pathParameters["name"]!,
-        ),
+        builder: (context, state) =>
+            ProfileScreen(name: state.pathParameters["name"]!),
       ),
     ],
   );

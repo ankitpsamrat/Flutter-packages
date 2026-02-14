@@ -35,13 +35,11 @@ class _ProviderHomeState extends State<ProviderHome> {
                   ),
                   TextField(
                     keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      hintText: 'Enter age',
-                    ),
+                    decoration: InputDecoration(hintText: 'Enter age'),
                     onChanged: (value) {
                       provider.checkEligibility(int.parse(value));
                     },
-                  )
+                  ),
                 ],
               );
             },

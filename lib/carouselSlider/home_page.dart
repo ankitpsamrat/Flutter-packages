@@ -86,7 +86,7 @@ class _MySliderState extends State<MySlider> {
                   shape: BoxShape.circle,
                   color: _currentIndex == index
                       ? Colors.blue
-                      : Colors.grey.withOpacity(0.5),
+                      : Colors.grey.withValues(alpha: 0.5),
                 ),
               ),
             );
